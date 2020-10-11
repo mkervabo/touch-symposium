@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Touch Symposium</title>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <style>
+      body {
+        margin: 0;
+        position: relative;
+        min-height: 100vh;
+      }
+
+      header {
+        position: relative;
+        height: 300px;
+      }
+
+      header > div {
+        position: absolute;
+        width: 80vw;
+        height: 300px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      header > div:first-child {
+        background: #87ceeb;
+        left: 0;
+        width: 80vw;
+        clip-path: polygon(100% 0, 0 0, 0 100%);
+      }
+
+      header > div:last-child {
+        background: #febfd2;
+        text-align: right;
+        right: 0;
+        width: 90vw;
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+      }
+
+      main > .bubbles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2%;
+      }
+
+      main > .bubbles > p {
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      main > .bubbles > p.blue {
+        background: #87ceeb;
+        width: 15vw;
+        height: 15vw;
+      }
+
+      main > .bubbles > p.blue:nth-child(2n) {
+        margin-right: 20%;
+        margin-left: 5%;
+      }
+
+      main > .bubbles > p.blue:nth-child(2n + 1) {
+        margin-top: 10%;
+        margin-left: 20%;
+        margin-right: 5%;
+      }
+
+      main > .bubbles > p.pink {
+        background: #febfd2;
+        margin: -2%;
+        width: 25vw;
+        height: 25vw;
+      }
+
+      main > .scroll {
+        height: 600px;
+        overflow: hidden;
+        margin-left: -150px;
+        white-space: nowrap;
+      }
+
+      main > .scroll > p {
+        width: 600px;
+        height: 600px;
+        display: inline-block;
+        margin: 0 -150px;
+      }
+
+      main > .scroll > p:nth-child(2n + 1) {
+        background: #87ceeb;
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+      }
+
+      main > .scroll > p:nth-child(2n) {
+        background: #febfd2;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      }
+
+      main > .members {
+        display: flex;
+        padding: 100px;
+      }
+
+      main > .members > div {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        border-radius: 100%;
+        background: gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      main > .agenda {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20vh 0;
+      }
+
+      main > .agenda > div {
+        width: 80vw;
+        height: 50vh;
+        background: #febfd2;
+      }
+
+      footer {
+        position: relative;
+        height: 300px;
+      }
+
+      footer > div {
+        position: absolute;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      footer > div:first-child {
+        background: #87ceeb;
+        width: 80vw;
+        right: 0;
+        bottom: 0;
+        height: 280px;
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+      }
+
+      footer > div:last-child {
+        background: #febfd2;
+        width: 30vw;
+        text-align: right;
+        left: 0;
+        bottom: 0;
+        height: 300px;
+        clip-path: polygon(0 0, 0 100%, 100% 100%);
+      }
+    </style>
+    <link rel="stylesheet" href="src/background.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          width="64"
+          height="64"
+          src="https://www.nicepng.com/png/full/246-2467547_your-logo-here-your-logo-here-logo-png.png"
+        />
+      </div>
+      <div>Lol</div>
+    </header>
+    <main>
+      <section class="bubbles">
+        <p class="what pink">Quoi</p>
+        <p class="where blue">Ou</p>
+        <p class="when blue">Quand</p>
+        <p class="how pink">Comment</p>
+      </section>
+
+      <section class="scroll">
+        <p>
+        </p><p>
+        </p><p>
+        </p><p>
+        </p><p>
+        </p><p>
+        </p><p>
+        </p><p>
+        </p><p>
+        </p><p>
+        </p><p>
+        </p><p>
+        </p>
+      </section>
+
+      <section class="members">
+        <div>
+          Mr Lol
+        </div>
+        <div>
+          Mr Lul
+        </div>
+      </section>
+
+
+      <section class="agenda">
+        <div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div></div>
+      <div></div>
+    </footer>
+    <script src="src/background.js"></script>
+  </body>
+</html>
