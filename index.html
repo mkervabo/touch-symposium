@@ -12,6 +12,8 @@
         margin: 0;
         position: relative;
         min-height: 100vh;
+        color: #ffffff;
+        font-family: sans-serif;
       }
 
       header {
@@ -47,34 +49,36 @@
         flex-wrap: wrap;
         justify-content: center;
         padding: 2%;
+        text-align: center;
       }
 
-      main > .bubbles > p {
+      main > .bubbles > div {
         border-radius: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 12px;
       }
 
-      main > .bubbles > p.blue {
-        background: #87ceeb;
+      main > .bubbles > div.blue {
+        background: rgba(135, 206, 235, 0.8);
         width: 15vw;
         height: 15vw;
       }
 
-      main > .bubbles > p.blue:nth-child(2n) {
+      main > .bubbles > div.blue:nth-child(2n) {
         margin-right: 20%;
         margin-left: 5%;
       }
 
-      main > .bubbles > p.blue:nth-child(2n + 1) {
+      main > .bubbles > div.blue:nth-child(2n + 1) {
         margin-top: 10%;
         margin-left: 20%;
         margin-right: 5%;
       }
 
-      main > .bubbles > p.pink {
-        background: #febfd2;
+      main > .bubbles > div.pink {
+        background: rgba(254, 191, 210, 0.8);
         margin: -2%;
         width: 25vw;
         height: 25vw;
@@ -95,12 +99,12 @@
       }
 
       main > .scroll > p:nth-child(2n + 1) {
-        background: #87ceeb;
+        background: rgba(135, 206, 235, 0.8);
         clip-path: polygon(50% 100%, 0 0, 100% 0);
       }
 
       main > .scroll > p:nth-child(2n) {
-        background: #febfd2;
+        background: rgba(254, 191, 210, 0.8);
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
       }
 
@@ -128,9 +132,12 @@
       }
 
       main > .agenda > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 80vw;
         height: 50vh;
-        background: #febfd2;
+        background: rgba(254, 191, 210, 0.8);
       }
 
       footer {
@@ -162,63 +169,135 @@
         height: 300px;
         clip-path: polygon(0 0, 0 100%, 100% 100%);
       }
+
+      .link {
+        color: #febfd2;
+      }
+
+      .contact {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        font-size: smaller;
+      }
+
+      h2 {
+        font-family: "Monoton", cursive;
+        font-weight: 400;
+        font-size: 24px;
+        margin: 0;
+        margin-bottom: 8px;
+      }
     </style>
     <link rel="stylesheet" href="src/background.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header>
       <div>
-        <img
-          width="64"
-          height="64"
-          src="https://www.nicepng.com/png/full/246-2467547_your-logo-here-your-logo-here-logo-png.png"
-        />
+        <!-- <img
+          width="200"
+          height="200"
+          src="logo.png"
+        /> -->
       </div>
-      <div>Lol</div>
+      <div>En</div>
     </header>
     <main>
       <section class="bubbles">
-        <p class="what pink">Quoi</p>
-        <p class="where blue">Ou</p>
-        <p class="when blue">Quand</p>
-        <p class="how pink">Comment</p>
+        <div class="what pink">
+          <div>
+            <h2>Computer Programming, Humanities, Music</h2>
+            &lt3 TØUCH &gt is an art-technology-philosophy symposium having its
+            chair in cyberpunk Paris<br />
+            &lt3 TØUCH &gt is a mixture of electro music, high level aesthetic,
+            feminine vibe, cutting-edge science, ethical programming and
+            sophisticated hacktivism<br />
+            &lt3 TØUCH &gt symposium will mix music, talks and digital art to
+            set the tracks for interdisciplinary critical and creative debates
+            in order to educate, inform and prevent
+          </div>
+        </div>
+        <div class="where blue">
+          <div>
+            <h2>WHERE ?</h2>
+            The Holodeck at #42born2code - Recording studio for
+            interdisciplinary creative debates on your screen
+          </div>
+        </div>
+        <div class="when blue">
+          <div>
+            <h2>December 3rd</h2>
+            <h2>2020</h2>
+          </div>
+        </div>
+        <div class="how pink">
+          <div>
+            <h2>Mission statement:</h2>
+            Our digital and IoT world is a sampling society. <br />
+            Looping fragments of data here and there to feed computerized
+            technologies.<br />
+            On December 3rd, 2020 let’s discuss how to program creative ethical
+            codes.
+          </div>
+        </div>
       </section>
 
       <section class="scroll">
-        <p>
-        </p><p>
-        </p><p>
-        </p><p>
-        </p><p>
-        </p><p>
-        </p><p>
-        </p><p>
-        </p><p>
-        </p><p>
-        </p><p>
-        </p><p>
-        </p>
+        <p>Cybersecurity / Privacy in Covid19 pandemic context</p>
+        <p>Digital Sovereignty</p>
+        <p>Tech addiction</p>
+        <p>Digital Arts</p>
+        <p>Fake</p>
+        <p>Diversity</p>
+        <p>Hacktivism</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
       </section>
 
-      <section class="members">
+      <!-- <section class="members">
         <div>
-          Mr Lol
+          Claire Katz<br />
+          Philosophy topics of interests: technology, education, and social
+          control "my interest lies in asking the question how do we resist the
+          forces of social control without giving up the technology that many of
+          also find liberating."
         </div>
-        <div>
-          Mr Lul
-        </div>
-      </section>
-
+        <div>Mr Lul</div>
+      </section> -->
 
       <section class="agenda">
-        <div>
-
-        </div>
+        <div><h2>PLANNING</h2></div>
       </section>
     </main>
 
     <footer>
-      <div></div>
+      <div>
+        <p class="contact">
+          Contact:<br />
+          Twitter:
+          <a href="https://twitter.com/Touch_Symposium" class="link"
+            >@Touch_Symposium</a
+          >
+          <br />
+          email: touchsymposium@protonmail.com<br /><br />
+
+          Endorsed by
+          <a href="https://philosophy.mit.edu/" class="link">MIT Philosophy</a>
+          ,
+          <a href="https://www.ias.edu/" class="link"
+            >Institute for Advanced Studies</a
+          >
+          , <a href="https://cultdeadcow.com/" class="link">cDc</a>
+        </p>
+      </div>
       <div></div>
     </footer>
     <script src="src/background.js"></script>

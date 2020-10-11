@@ -12,7 +12,7 @@ function color(path) {
 	return colors[(path.y + Math.floor(Math.random() * 2) - 1 + colors.length) % colors.length] + Math.floor(50 + Math.random() * 205).toString(16).padStart(2, '0')
 }
 
-const svg = new Triangulr(600, 500, 40, 10, color)
+const svg = new Triangulr(600, 500, 35, 10, color)
 
 svg.classList.add("background")
 document.body.prepend(svg)
