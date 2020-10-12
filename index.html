@@ -85,25 +85,28 @@
       }
 
       main > .scroll {
-        height: 600px;
+        /* height: 600px; */
         overflow: hidden;
         margin-left: -150px;
         white-space: nowrap;
       }
 
-      main > .scroll > p {
+      main > .scroll > div {
         width: 600px;
         height: 600px;
-        display: inline-block;
+        display: inline-flex;
+        vertical-align: top;
+        align-items: center;
+        justify-content: center;
         margin: 0 -150px;
       }
 
-      main > .scroll > p:nth-child(2n + 1) {
+      main > .scroll > div:nth-child(2n + 1) {
         background: rgba(135, 206, 235, 0.8);
         clip-path: polygon(50% 100%, 0 0, 100% 0);
       }
 
-      main > .scroll > p:nth-child(2n) {
+      main > .scroll > div:nth-child(2n) {
         background: rgba(254, 191, 210, 0.8);
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
       }
@@ -247,19 +250,21 @@
         </div>
       </section>
 
-      <section class="scroll">
-        <p>Cybersecurity / Privacy in Covid19 pandemic context</p>
-        <p>Digital Sovereignty</p>
-        <p>Tech addiction</p>
-        <p>Digital Arts</p>
-        <p>Fake</p>
-        <p>Diversity</p>
-        <p>Hacktivism</p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
+      <!-- prettier-ignore -->
+      <section class="scroll"><!--
+        --><div></div><!--
+        --><div>Cybersecurity / Privacy in Covid19 pandemic context</div><!--
+        --><div>Digital Sovereignty</div><!--
+        --><div>Tech addiction</div><!--
+        --><div>Digital Arts</div><!--
+        --><div>Fake</div><!--
+        --><div>Diversity</div><!--
+        --><div>Hacktivism</div><!--
+        --><div></div><!--
+        --><div></div><!--
+        --><div></div><!--
+        --><div></div><!--
+        --><div></div>
       </section>
 
       <!-- <section class="members">
