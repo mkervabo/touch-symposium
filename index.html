@@ -7,7 +7,7 @@
     <meta
       name="viewport"
       content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
-    />
+    >
     <style>
       body {
         margin: 0;
@@ -63,8 +63,8 @@
 
       main > .bubbles > div.blue {
         background: rgba(135, 206, 235, 0.8);
-        width: 15vw;
-        height: 15vw;
+        width: 300px;
+        height: 300px;
       }
 
       main > .bubbles > div.blue:nth-child(2n) {
@@ -81,8 +81,8 @@
       main > .bubbles > div.pink {
         background: rgba(254, 191, 210, 0.8);
         margin: -2%;
-        width: 25vw;
-        height: 25vw;
+        width: 500px;
+        height: 500px;
       }
 
       main > .scroll {
@@ -180,10 +180,35 @@
       }
 
       .contact {
-        position: absolute;
-        top: 50%;
-        right: 20px;
         font-size: smaller;
+        padding-top: 120px;
+        padding-left: 40vw;
+      }
+
+
+      @media screen and (max-width: 800px) {
+        header > div:first-child {
+          z-index: 1;
+          width: 20vw;
+          height: 150px;
+        }
+
+        header > div:last-child {
+          width: 100vw;
+          clip-path: none;
+          height: 150px;
+        }
+
+        footer > div:first-child {
+          width: 100vw;
+          padding-left: 30vw;
+          clip-path: none;
+        }
+
+        .contact {
+          padding-top: 0;
+          padding-left: 0;
+        }
       }
 
       h2 {
