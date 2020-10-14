@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Touch Symposium</title>
+    <link rel="icon" type="image/png" href="logo.png" />
     <meta
       name="viewport"
       content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
@@ -192,6 +193,19 @@
         margin: 0;
         margin-bottom: 8px;
       }
+
+      .touch {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .touch_title {
+        font-family: "Monoton", cursive;
+        font-weight: 400;
+        font-size: 32px;
+      }
     </style>
     <link rel="stylesheet" href="src/background.css" />
     <link
@@ -209,7 +223,12 @@
           src="logo.png"
         /> -->
       </div>
-      <div></div>
+      <div>
+        <div class="touch">
+          <span class="touch_title">TOUCH</span>
+          <span class="touch_title">SYMPOSIUM</span>
+        </div>
+      </div>
     </header>
     <main>
       <section class="bubbles">
