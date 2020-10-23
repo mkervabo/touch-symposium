@@ -8,7 +8,6 @@ function color(path) {
 		'#93B9D6',
 		//'#eeeeee',
 	]
-	console.log(path)
 	return colors[(path.y + Math.floor(Math.random() * 2) - 1 + colors.length) % colors.length] + Math.floor(50 + Math.random() * 205).toString(16).padStart(2, '0')
 }
 

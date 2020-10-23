@@ -17,6 +17,12 @@
         font-family: sans-serif;
       }
 
+      #flag {
+        width: 32px;
+        height: 24px;
+        cursor: pointer;
+      }
+
       header {
         position: relative;
         height: 300px;
@@ -253,13 +259,15 @@
           <span class="touch_title">TOUCH</span>
           <span class="touch_title">SYMPOSIUM</span>
         </div>
+        <img id="flag">
       </div>
     </header>
     <main>
       <section class="bubbles">
         <div class="what pink">
           <div>
-            <h2>Computer Programming, Humanities, Music</h2>
+            <h2 i18n="what_title">Computer Programming, Humanities, Music</h2>
+            <p i18n="what_body">
             &lt3 TØUCH &gt is an art-technology-philosophy symposium having its
             chair in cyberpunk Paris<br />
             &lt3 TØUCH &gt is a mixture of electro music, high level aesthetic,
@@ -268,29 +276,34 @@
             &lt3 TØUCH &gt symposium will mix music, talks and digital art to
             set the tracks for interdisciplinary critical and creative debates
             in order to educate, inform and prevent
+            </p>
           </div>
         </div>
         <div class="where blue">
           <div>
-            <h2>WHERE ?</h2>
+            <h2 i18n="where_title">WHERE ?</h2>
+            <p i18n="where_body">
             The Holodeck at #42born2code - Recording studio for
             interdisciplinary creative debates on your screen
+            </p>
           </div>
         </div>
         <div class="when blue">
           <div>
-            <h2>December 3rd</h2>
+            <h2 i18n="when_title">December 3rd</h2>
             <h2>2020</h2>
           </div>
         </div>
         <div class="how pink">
           <div>
-            <h2>Mission statement:</h2>
+            <h2 i18n="how_title">Mission statement:</h2>
+            <p i18n="how_body">
             Our digital and IoT world is a sampling society. <br />
             Looping fragments of data here and there to feed computerized
             technologies.<br />
             On December 3rd, 2020 let’s discuss how to program creative ethical
             codes.
+            </p>
           </div>
         </div>
       </section>
@@ -351,5 +364,6 @@
       <div></div>
     </footer>
     <script src="src/background.js"></script>
+    <script src="src/translate.js"></script>
   </body>
 </html>
