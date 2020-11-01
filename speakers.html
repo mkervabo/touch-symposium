@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Touch Symposium</title>
+    <link rel="icon" type="image/png" href="logo.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <style>
+      main {
+        display: flex;
+        flex-direction: column;
+      }
+
+      main > div {
+        padding: 20px;
+        margin: 30px 20vw;
+      }
+
+      @media screen and (max-width: 800px) {
+        main > div {
+          margin: 20px 40px;
+        }
+      }
+
+      main > div > img {
+        float: left;
+        border-radius: 50%;
+        shape-outside: circle(50%);
+        margin: 8px;
+      }
+
+      main > div:nth-child(2n) {
+        background: rgba(254, 191, 210, 0.8);
+      }
+
+      main > div:nth-child(2n + 1) {
+        background: rgba(135, 206, 235, 0.8);
+      }
+    </style>
+    <link rel="stylesheet" href="src/layout.css" />
+    <link rel="stylesheet" href="src/background.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <!-- <img
+          width="200"
+          height="200"
+          src="logo.png"
+        /> -->
+      </div>
+      <div>
+        <div class="touch">
+          <span class="touch_title">TOUCH</span>
+          <span class="touch_title">SYMPOSIUM</span>
+        </div>
+        <img id="flag" />
+      </div>
+    </header>
+    <main>
+      <div>
+        <h2 id="test">Nom Prenom</h2>
+
+        <img src="https://randomuser.me/api/portraits/women/79.jpg" />
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed
+        tincidunt nunc, sit amet luctus nisi. Integer varius venenatis auctor.
+        Vivamus vel convallis est. Pellentesque accumsan odio nec erat
+        efficitur, sed porta magna posuere. Donec nunc odio, varius quis libero
+        in, convallis commodo diam. Suspendisse consectetur pulvinar risus, quis
+        consequat dolor fringilla sit amet. Praesent vehicula, nulla sed
+        vestibulum ornare, massa libero sodales augue, vel rutrum quam nisl sit
+        amet lacus. Vestibulum congue in nunc eu consectetur. Quisque id velit
+        quam. Proin luctus laoreet odio, commodo scelerisque libero pulvinar
+        porta. Aenean quis dolor id leo pretium tincidunt. Aliquam elit ex,
+        rutrum ut egestas vitae, accumsan eget turpis. Fusce in volutpat metus.
+        Fusce in aliquam lacus. Etiam rutrum pharetra magna. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Praesent eget mollis urna, vitae pharetra risus. Suspendisse vehicula
+        lacinia purus, nec finibus urna pharetra in. Donec quis erat tempus,
+        laoreet urna vitae, hendrerit turpis. Nulla at urna imperdiet mauris
+        pretium tempus. Aenean aliquam et dolor at consequat. Quisque a feugiat
+        lacus, in maximus arcu. Nullam luctus malesuada massa, sed consectetur
+        est bibendum in. Nunc vehicula, lorem quis vehicula molestie, purus
+        lectus mattis ipsum, non dapibus lorem urna nec justo. Pellentesque non
+        nisl vehicula, laoreet turpis ac, ornare risus. Praesent consequat nisi
+        non leo euismod mattis. Proin at quam dictum lectus varius ultricies.
+        Pellentesque convallis, justo ut sagittis pellentesque, lectus enim
+        pharetra dolor, sit amet fringilla massa ex nec ligula. Sed eget posuere
+        erat. Mauris gravida vitae augue ut auctor. Phasellus eget eros sit amet
+        eros aliquet ultrices vel vitae neque. Integer eu est justo. Duis vel
+        nibh massa. Vivamus a elit vitae magna rhoncus bibendum. Praesent
+        faucibus vehicula dignissim. Aenean suscipit ornare elit, at vehicula
+        quam iaculis eget. Sed a velit luctus, egestas justo ut, fringilla ante.
+        Fusce quis commodo mi, et blandit velit. Nulla sit amet venenatis felis.
+        Vivamus nec enim et eros imperdiet dictum. Cras fringilla placerat
+        vestibulum. Nam aliquet nibh sit amet arcu scelerisque commodo.
+        Vestibulum commodo ullamcorper maximus. Nullam porta rutrum fermentum.
+        Proin sed lobortis libero. Duis finibus, felis at dapibus aliquet, eros
+        lectus pharetra sem, placerat imperdiet mauris risus ut est. Ut molestie
+        eros iaculis congue egestas.
+      </div>
+      <div>
+        <h2 id="test1">Nom Prenom</h2>
+
+        <img src="https://randomuser.me/api/portraits/women/80.jpg" />
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed
+        tincidunt nunc, sit amet luctus nisi. Integer varius venenatis auctor.
+        Vivamus vel convallis est. Pellentesque accumsan odio nec erat
+        efficitur, sed porta magna posuere. Donec nunc odio, varius quis libero
+        in, convallis commodo diam. Suspendisse consectetur pulvinar risus, quis
+        consequat dolor fringilla sit amet. Praesent vehicula, nulla sed
+        vestibulum ornare, massa libero sodales augue, vel rutrum quam nisl sit
+        amet lacus. Vestibulum congue in nunc eu consectetur. Quisque id velit
+        quam. Proin luctus laoreet odio, commodo scelerisque libero pulvinar
+        porta. Aenean quis dolor id leo pretium tincidunt. Aliquam elit ex,
+        rutrum ut egestas vitae, accumsan eget turpis. Fusce in volutpat metus.
+        Fusce in aliquam lacus. Etiam rutrum pharetra magna. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Praesent eget mollis urna, vitae pharetra risus. Suspendisse vehicula
+        lacinia purus, nec finibus urna pharetra in. Donec quis erat tempus,
+        laoreet urna vitae, hendrerit turpis. Nulla at urna imperdiet mauris
+        pretium tempus. Aenean aliquam et dolor at consequat. Quisque a feugiat
+        lacus, in maximus arcu. Nullam luctus malesuada massa, sed consectetur
+        est bibendum in. Nunc vehicula, lorem quis vehicula molestie, purus
+        lectus mattis ipsum, non dapibus lorem urna nec justo. Pellentesque non
+        nisl vehicula, laoreet turpis ac, ornare risus. Praesent consequat nisi
+        non leo euismod mattis. Proin at quam dictum lectus varius ultricies.
+        Pellentesque convallis, justo ut sagittis pellentesque, lectus enim
+        pharetra dolor, sit amet fringilla massa ex nec ligula. Sed eget posuere
+        erat. Mauris gravida vitae augue ut auctor. Phasellus eget eros sit amet
+        eros aliquet ultrices vel vitae neque. Integer eu est justo. Duis vel
+        nibh massa. Vivamus a elit vitae magna rhoncus bibendum. Praesent
+        faucibus vehicula dignissim. Aenean suscipit ornare elit, at vehicula
+        quam iaculis eget. Sed a velit luctus, egestas justo ut, fringilla ante.
+        Fusce quis commodo mi, et blandit velit. Nulla sit amet venenatis felis.
+        Vivamus nec enim et eros imperdiet dictum. Cras fringilla placerat
+        vestibulum. Nam aliquet nibh sit amet arcu scelerisque commodo.
+        Vestibulum commodo ullamcorper maximus. Nullam porta rutrum fermentum.
+        Proin sed lobortis libero. Duis finibus, felis at dapibus aliquet, eros
+        lectus pharetra sem, placerat imperdiet mauris risus ut est. Ut molestie
+        eros iaculis congue egestas.
+      </div>
+      <div>
+        <h2 id="test2">Nom Prenom</h2>
+
+        <img src="https://randomuser.me/api/portraits/women/81.jpg" />
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed
+        tincidunt nunc, sit amet luctus nisi. Integer varius venenatis auctor.
+        Vivamus vel convallis est. Pellentesque accumsan odio nec erat
+        efficitur, sed porta magna posuere. Donec nunc odio, varius quis libero
+        in, convallis commodo diam. Suspendisse consectetur pulvinar risus, quis
+        consequat dolor fringilla sit amet. Praesent vehicula, nulla sed
+        vestibulum ornare, massa libero sodales augue, vel rutrum quam nisl sit
+        amet lacus. Vestibulum congue in nunc eu consectetur. Quisque id velit
+        quam. Proin luctus laoreet odio, commodo scelerisque libero pulvinar
+        porta. Aenean quis dolor id leo pretium tincidunt. Aliquam elit ex,
+        rutrum ut egestas vitae, accumsan eget turpis. Fusce in volutpat metus.
+        Fusce in aliquam lacus. Etiam rutrum pharetra magna. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Praesent eget mollis urna, vitae pharetra risus. Suspendisse vehicula
+        lacinia purus, nec finibus urna pharetra in. Donec quis erat tempus,
+        laoreet urna vitae, hendrerit turpis. Nulla at urna imperdiet mauris
+        pretium tempus. Aenean aliquam et dolor at consequat. Quisque a feugiat
+        lacus, in maximus arcu. Nullam luctus malesuada massa, sed consectetur
+        est bibendum in. Nunc vehicula, lorem quis vehicula molestie, purus
+        lectus mattis ipsum, non dapibus lorem urna nec justo. Pellentesque non
+        nisl vehicula, laoreet turpis ac, ornare risus. Praesent consequat nisi
+        non leo euismod mattis. Proin at quam dictum lectus varius ultricies.
+        Pellentesque convallis, justo ut sagittis pellentesque, lectus enim
+        pharetra dolor, sit amet fringilla massa ex nec ligula. Sed eget posuere
+        erat. Mauris gravida vitae augue ut auctor. Phasellus eget eros sit amet
+        eros aliquet ultrices vel vitae neque. Integer eu est justo. Duis vel
+        nibh massa. Vivamus a elit vitae magna rhoncus bibendum. Praesent
+        faucibus vehicula dignissim. Aenean suscipit ornare elit, at vehicula
+        quam iaculis eget. Sed a velit luctus, egestas justo ut, fringilla ante.
+        Fusce quis commodo mi, et blandit velit. Nulla sit amet venenatis felis.
+        Vivamus nec enim et eros imperdiet dictum. Cras fringilla placerat
+        vestibulum. Nam aliquet nibh sit amet arcu scelerisque commodo.
+        Vestibulum commodo ullamcorper maximus. Nullam porta rutrum fermentum.
+        Proin sed lobortis libero. Duis finibus, felis at dapibus aliquet, eros
+        lectus pharetra sem, placerat imperdiet mauris risus ut est. Ut molestie
+        eros iaculis congue egestas.
+      </div>
+    </main>
+    <footer>
+      <div>
+        <p class="contact">
+          Contact:<br />
+          Twitter:
+          <a href="https://twitter.com/Touch_Symposium" class="link"
+            >@Touch_Symposium</a
+          >
+          <br />
+          email: touchsymposium@protonmail.com<br /><br />
+
+          Endorsed by
+          <a href="https://philosophy.mit.edu/" class="link">MIT Philosophy</a>
+          ,
+          <a href="https://www.ias.edu/" class="link"
+            >Institute for Advanced Studies</a
+          >
+          , <a href="https://cultdeadcow.com/" class="link">cDc</a>
+        </p>
+      </div>
+      <div></div>
+    </footer>
+    <script src="src/background.js"></script>
+    <script src="src/translate.js"></script>
+  </body>
+</html>

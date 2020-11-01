@@ -18,18 +18,23 @@ Le 3 d√©cembre 2020, nous discuterons pourquoi et comment programmer des codes √
 
 function translate(lang) {
 	for (const [key, value] of Object.entries(lang)) {
-		document.querySelector(`[i18n=${key}]`).innerText = value
+    const el = document.querySelector(`[i18n=${key}]`)
+    if (el)
+		  el.innerText = value
 	}
 }
 
-let english = document.location.hash !== "#fr";
+const url = new URL(document.location)
+
+let english = url.searchParams.get("lang") !== "fr";
 
 const flag = document.getElementById('flag')
 
 function updateLang() {
 	translate(english ? en : fr);
-	document.location.hash = english ? "#en" : "#fr"
-	flag.setAttribute("src", `https://cdn.rawgit.com/lipis/flag-icon-css/fe79c175/flags/4x3/${english ? 'us' : 'fr'}.svg`)
+  url.searchParams.set('lang', english ? "en" : "fr")
+  history.pushState({}, '', url.toString())
+	flag.setAttribute("src", `https://cdn.rawgit.com/lipis/flag-icon-css/fe79c175/flags/4x3/${english ? 'fr' : 'gb'}.svg`)
 }
 
 updateLang()
