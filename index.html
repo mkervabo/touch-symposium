@@ -7,7 +7,7 @@
     <meta
       name="viewport"
       content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
-    >
+    />
     <style>
       main > .bubbles {
         display: flex;
@@ -45,8 +45,9 @@
       main > .bubbles > div.pink {
         background: rgba(254, 191, 210, 0.8);
         margin: -2%;
-        width: 500px;
-        height: 500px;
+        padding: 20px;
+        width: 600px;
+        height: 600px;
       }
 
       main > .scroll {
@@ -77,20 +78,50 @@
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
       }
 
+      @media screen and (max-width: 500px) {
+        main > .members { 
+          padding: 100px;
+        }
+      }
+      
       main > .members {
         display: flex;
-        padding: 100px;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: center;
       }
 
+      
+
       main > .members > div {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         margin: 20px;
         border-radius: 100%;
-        background: gray;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+      }
+
+      main > .members > div > p {
+        text-align: center;
+      }
+
+      main > .members > div:nth-child(2n) {
+        background: rgba(254, 191, 210, 0.8);
+      }
+
+      main > .members > div:nth-child(2n + 1) {
+        background: rgba(135, 206, 235, 0.8);
+      }
+
+      main > .members > div:nth-child(2n + 1) .link {
+        color: rgb(254, 191, 210);
+      }
+
+      main > .members > div:nth-child(2n) .link {
+        color: rgb(135, 206, 235);
       }
 
       main > .agenda {
@@ -131,7 +162,7 @@
           <span class="touch_title">TOUCH</span>
           <span class="touch_title">SYMPOSIUM</span>
         </div>
-        <img id="flag">
+        <img id="flag" />
       </div>
     </header>
     <main>
@@ -140,14 +171,14 @@
           <div>
             <h2 i18n="what_title">Computer Programming, Humanities, Music</h2>
             <p i18n="what_body">
-            &lt3 TØUCH &gt is an art-technology-philosophy symposium having its
-            chair in cyberpunk Paris<br />
-            &lt3 TØUCH &gt is a mixture of electro music, high level aesthetic,
-            feminine vibe, cutting-edge science, ethical programming and
-            sophisticated hacktivism<br />
-            &lt3 TØUCH &gt symposium will mix music, talks and digital art to
-            set the tracks for interdisciplinary critical and creative debates
-            in order to educate, inform and prevent
+              &lt3 TØUCH &gt is an art-technology-philosophy symposium having
+              its chair in cyberpunk Paris<br />
+              &lt3 TØUCH &gt is a mixture of electro music, high level
+              aesthetic, feminine vibe, cutting-edge science, ethical
+              programming and sophisticated hacktivism<br />
+              &lt3 TØUCH &gt symposium will mix music, talks and digital art to
+              set the tracks for interdisciplinary critical and creative debates
+              in order to educate, inform and prevent
             </p>
           </div>
         </div>
@@ -155,8 +186,8 @@
           <div>
             <h2 i18n="where_title">WHERE ?</h2>
             <p i18n="where_body">
-            The Holodeck at #42born2code - Recording studio for
-            interdisciplinary creative debates on your screen
+              The Holodeck at #42born2code - Recording studio for
+              interdisciplinary creative debates on your screen
             </p>
           </div>
         </div>
@@ -170,11 +201,11 @@
           <div>
             <h2 i18n="how_title">Mission statement:</h2>
             <p i18n="how_body">
-            Our digital and IoT world is a sampling society. <br />
-            Looping fragments of data here and there to feed computerized
-            technologies.<br />
-            On December 3rd, 2020 let’s discuss how to program creative ethical
-            codes.
+              Our digital and IoT world is a sampling society. <br />
+              Looping fragments of data here and there to feed computerized
+              technologies.<br />
+              On December 3rd, 2020 let’s discuss how to program creative
+              ethical codes.
             </p>
           </div>
         </div>
@@ -197,16 +228,78 @@
         --><div></div>
       </section>
 
-      <!-- <section class="members">
+      <section class="members">
         <div>
-          Claire Katz<br />
-          Philosophy topics of interests: technology, education, and social
-          control "my interest lies in asking the question how do we resist the
-          forces of social control without giving up the technology that many of
-          also find liberating."
+          <h3>Steven M. Bellovin</h3>
+          <p>
+            Steven M. Bellovin is the Percy K. and Vida L. W. Hudson Professor
+            of <a href="/speakers.html#stevenmbellovin" class="link">[...]</a>
+          </p>
         </div>
-        <div>Mr Lul</div>
-      </section> -->
+        <div>
+          <h3>Joe Grand</h3>
+          <p>
+            Joe Grand, also known as Kingpin, is a computer engineer, hardware
+            <a href="/speakers.html#joegrand" class="link">[...]</a>
+          </p>
+        </div>
+        <div>
+          <h3>Claire Katz</h3>
+          <p>
+            Claire Katz is the Murray and Celeste Fasken Chair in Distinguished
+            <a href="/speakers.html#clairekatz" class="link">[...]</a>
+          </p>
+        </div>
+        <div>
+          <h3>Haroon Meer</h3>
+          <p>
+            Haroon Meer is the founder of Thinkst, the company behind the
+            <a href="/speakers.html#haroonmeer" class="link">[...]</a>
+          </p>
+        </div>
+        <div>
+          <h3>Mark Miller</h3>
+          <p>
+            Mark Miller Ph.D. is a researcher at the University of Sussex, and a
+            <a href="/speakers.html#markmiller" class="link">[...]</a>
+          </p>
+        </div>
+        <div>
+          <h3>Katie Moussouris</h3>
+          <p><a href="/speakers.html#katiemoussouris" class="link">[...]</a></p>
+        </div>
+        <div>
+          <h3>Wendy Nather</h3>
+          <p><a href="/speakers.html#wendynather" class="link">[...]</a></p>
+        </div>
+        <div>
+          <h3>Charles Shirer</h3>
+          <p>
+            Charles(bsdbandit) is a Penetration Tester / RedTeamer He has 17
+            years of
+            <a href="/speakers.html#charlesshirer" class="link">[...]</a>
+          </p>
+        </div>
+        <div>
+          <h3>Jung Seung</h3>
+          <p><a href="/speakers.html#jungseung" class="link">[...]</a></p>
+        </div>
+        <div>
+          <h3>Justin Weinberg</h3>
+          <p>
+            Justin Weinberg is associate professor of philosophy at the
+            University of
+            <a href="/speakers.html#justinweinberg" class="link">[...]</a>
+          </p>
+        </div>
+        <div>
+          <h3>Sophie Viger</h3>
+          <p>
+            Sophie est une passionnée de culture geek depuis sa plus tendre
+            <a href="/speakers.html#sophieviger" class="link">[...]</a>
+          </p>
+        </div>
+      </section>
 
       <section class="agenda">
         <div><h2>PLANNING</h2></div>
