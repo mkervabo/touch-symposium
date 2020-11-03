@@ -128,6 +128,7 @@
         justify-content: center;
         margin: 20vh 0;
       }
+      
 
       main > .agenda > div {
         display: flex;
@@ -136,6 +137,38 @@
         width: 80vw;
         height: 50vh;
         background: rgba(254, 191, 210, 0.8);
+      }
+
+      main > .sponsor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20vh 0;
+      }
+
+      main > .sponsor > div {
+        width: 300px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+      }
+      
+      main > .sponsor > div:nth-child(2n) {
+        background: rgb(254, 191, 210);
+      }
+
+      main > .sponsor > div:nth-child(2n + 1) {
+        background: rgb(135, 206, 235);
+      }
+
+      main > .sponsor > div > img {
+        width: 300px;
+        height: 150px;
+        object-fit: contain;
       }
     </style>
     <link rel="stylesheet" href="src/layout.css" />
@@ -310,6 +343,11 @@
 
       <section class="agenda">
         <div><h2>PLANNING</h2></div>
+      </section>
+
+      <section class="sponsor">
+        <div><img src="/src/img/sponsor/canarythinkst.png" /></div>
+        <div><img src="/src/img/sponsor/grandideastudio.png" /></div>
       </section>
     </main>
 
