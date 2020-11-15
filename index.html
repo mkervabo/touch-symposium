@@ -50,6 +50,17 @@
         height: 600px;
       }
 
+      main > .trailer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20vh 0;
+      }
+
+      main > .trailer > video {
+        width: 80%;
+      }
+
       main > .scroll {
         display: none;
         /* height: 600px; */
@@ -128,15 +139,41 @@
         justify-content: center;
         margin: 20vh 0;
       }
-      
 
       main > .agenda > div {
         display: flex;
         align-items: center;
-        justify-content: center;
         width: 80vw;
-        height: 50vh;
         background: rgba(254, 191, 210, 0.8);
+        padding: 30px;
+        overflow-x: scroll;
+      }
+
+      #planning {
+        width: 100%;
+        
+      }
+
+      #planning,
+      tr,
+      td {
+        text-align: center;
+        border-collapse: collapse;
+        border: 3px solid white;
+        font-weight: bold;
+      }
+
+      #planning > tbody > tr > td > div {
+        margin: 5px;
+      }
+
+      #planning > tbody > tr > td {
+        min-width: 155px;
+      }
+
+      .role {
+        font-weight: lighter;
+        font-style: italic;
       }
 
       main > .sponsor {
@@ -157,7 +194,7 @@
         padding: 20px;
         margin: 20px;
       }
-      
+
       main > .sponsor > div:nth-child(2n) {
         background: rgb(254, 191, 210);
       }
@@ -243,6 +280,12 @@
         </div>
       </section>
 
+      <section class="trailer">
+        <video controls>
+          <source src="/src/video/trailer.mp4" type="video/mp4" />
+          <p><a href="/src/video/trailer.mp4">Trailer link</a>.</p>
+        </video>
+      </section>
       <!-- prettier-ignore -->
       <section class="scroll"><!--
         --><div></div><!--
@@ -336,14 +379,208 @@
         <div>
           <h3>Sophie Viger</h3>
           <p>
-            Sophie est une passionnée de culture geek depuis sa plus tendre
+            Sophie is the managing director of 42 computer programming
             <a href="/speakers.html#sophieviger" class="link">[...]</a>
           </p>
         </div>
       </section>
 
       <section class="agenda">
-        <div><h2>PLANNING</h2></div>
+        <div>
+          <table id="planning">
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Paris</td>
+                <td>New York</td>
+                <td>Austin</td>
+                <td>San Francisco</td>
+                <td>Seoul</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Keynote 01</td>
+                <td>
+                  14:00 <br />
+                  14:21
+                </td>
+                <td>
+                  08:00 am <br />
+                  09:21 am
+                </td>
+                <td>
+                  06:00 am<br />
+                  07:21 am
+                </td>
+                <td>
+                  04:00 am<br />
+                  04:21am
+                </td>
+                <td>
+                  22:00 <br />
+                  22:21
+                </td>
+                <td>
+                  <h3>Seung Jung</h3>
+                  <span class="role">Digital and Tech Artist</span><br />
+                  Data Refraction as Art
+                </td>
+              </tr>
+              <tr>
+                <td>Keynote 02</td>
+                <td>
+                  14:42 <br />
+                  15:02
+                </td>
+                <td>
+                  08:42 am <br />
+                  09:02 am
+                </td>
+                <td>07:42 am <br />07:02 am</td>
+                <td>
+                  05:42 am <br />
+                  06:02 am
+                </td>
+                <td>
+                  23:42 <br />
+                  00:02
+                </td>
+                <td>
+                  <h3>Sophie Viger</h3>
+                  <span class="role">Managing Director at 42</span><br />
+                  What is 42 computer programming school?
+                </td>
+              </tr>
+
+              <tr>
+                <td>Keynote 03</td>
+                <td>
+                  15:21 <br />
+                  15:42
+                </td>
+                <td>09:21 am<br />09:42 am</td>
+                <td>08:21 am<br />08:42 am</td>
+                <td>06:21 am<br />06:42 am</td>
+                <td>00:21<br />00:42</td>
+                <td>
+                  <h3>Haroon Meer</h3>
+                  <span class="role">Thinkst Founder</span><br />
+                  A Hacker from South Africa
+                </td>
+              </tr>
+              <tr>
+                <td>Panel 01</td>
+                <td>16:00 <br />17:00</td>
+                <td>10:00 am<br />11:00 am</td>
+                <td>09:00 am<br />10:00 am</td>
+                <td>07:00 am<br />08:00 am</td>
+                <td>01:00<br />02:00</td>
+                <td>
+                  <div>
+                    <h3>Steve M. Bellovin</h3>
+                    <span class="role"
+                      >Professor of Computer Science at Columbia
+                      University</span
+                    ><br />
+                    AI, Crypto, Law
+                  </div>
+                  *
+                  <div>
+                    <h3>Mark D. Miller</h3>
+                    <span class="role"
+                      >Philosopher and Researcher at University of Sussex</span
+                    ><br />
+                    The Value of Uncertainty
+                  </div>
+                  *
+                  <div>Dialogue on AI ethics</div>
+                </td>
+              </tr>
+              <tr>
+                <td>Keynote 04</td>
+                <td>17:21<br />17:42</td>
+                <td>11:21 am<br />11:42 am</td>
+                <td>10:21 am<br />10:42 am</td>
+                <td>08:21 am<br />08:42 am</td>
+                <td>02:21<br />02:42</td>
+                <td>
+                  <h3>Katie Moussouris</h3>
+                  <span class="role">Luta Security CEO & Founder</span><br />
+                  Being a Female Hacker and an Entrepreneur? Yes We Can
+                </td>
+              </tr>
+              <tr>
+                <td>Panel 02</td>
+                <td>18:00<br />19:00</td>
+                <td>12:00 pm<br />01:00 pm</td>
+                <td>11:00 am<br />12:00 pm</td>
+                <td>09:00 am<br />10:00 am</td>
+                <td>03:00<br />04:00</td>
+                <td>
+                  <div>
+                    <h3>Wendy Nather</h3>
+                    <span class="role"
+                      >CISO Team Leader at Duo Security (CISCO)</span
+                    ><br />
+                    Democratizing Information Security
+                  </div>
+                  *
+                  <div>
+                    <h3>Claire Katz</h3>
+                    <span class="role"
+                      >Professor of Philosophy at Texas A&M University</span
+                    ><br />
+                    Technology, Surveillance and Resisting Social Control
+                  </div>
+                  *
+                  <div>Dialogue on Cybersecurity Ethics</div>
+                </td>
+              </tr>
+              <tr>
+                <td>Keynote 05</td>
+                <td>19:21<br />19:42</td>
+                <td>1:21 pm<br />1:42 pm</td>
+                <td>12:21 pm<br />12:42 pm</td>
+                <td>10:21 pm<br />10:42 pm</td>
+                <td>04:21<br />04:42</td>
+                <td>
+                  <h3>Charles Shirer "bdsbandit"</h3>
+                  <span class="role">Hacker</span><br />
+                  Lift Up Your Mood! Yip Yip!
+                </td>
+              </tr>
+              <tr>
+                <td>Panel 03</td>
+                <td>20:00<br />21:00</td>
+                <td>2:00 pm<br />3:00 pm</td>
+                <td>1:00 pm<br />2:00 pm</td>
+                <td>11:00 am<br />12:00 pm</td>
+                <td>05:00<br />06:00</td>
+                <td>
+                  <div>
+                    <h3>Joe Grand "Kingpin"</h3>
+                    <span class="role"
+                      >Grand Idea Studio Founder, L0pht Hardware Hacker, TV
+                      Host</span
+                    ><br />
+                    Hardware Hacking is Cool
+                  </div>
+                  *
+                  <div>
+                    <h3>Justin Weinberg</h3>
+                    <span class="role"
+                      >Associate Professor of Philosophy at University of South
+                      Carolina, Daily Nous Editor</span
+                    ><br />
+                    Critical Thinking is Cool
+                  </div>
+                  *
+                  <div>Dialogue on the Necessity of Creativity</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section class="sponsor">
@@ -370,7 +607,10 @@
           <a href="https://www.ias.edu/" class="link"
             >Institute for Advanced Studies</a
           >
-          , <a href="https://cultdeadcow.com/" class="link">cDc</a>
+          , <a href="https://cultdeadcow.com/" class="link">cDc</a><br /><br />
+          Organized by Caroline Murgue, Maïwenn Kervabon, Sarah Dahan, Pauline
+          Petit<br />
+          Music: courtesy of Daft Punk
         </p>
       </div>
       <div></div>
